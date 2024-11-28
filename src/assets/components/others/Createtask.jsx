@@ -85,6 +85,7 @@ const Createtask = () => {
           <div className="pb-2">
             <h3>Task title</h3>
             <input
+              required
               className="bg-black rounded border border-1 border-white "
               type="text"
               placeholder="Make a UI design"
@@ -99,6 +100,7 @@ const Createtask = () => {
             <h3>Date</h3>
             <div className="relative">
               <input
+                required
                 className="bg-black rounded border border-1 border-white text-white p-2 pr-10 "
                 type="date"
                 value={date}
@@ -121,6 +123,7 @@ const Createtask = () => {
           <div className="pb-2">
             <h3>Assign to</h3>
             <input
+              required
               className="bg-black rounded border border-1 border-white "
               type="text"
               placeholder="Employee name"
@@ -133,6 +136,7 @@ const Createtask = () => {
           <div className="pb-2">
             <h3>Category</h3>
             <input
+              required
               className="bg-black rounded border border-1 border-white "
               type="text"
               placeholder="design, dev, etc"
@@ -147,6 +151,7 @@ const Createtask = () => {
           <div className="w-1/2">
             <h3>Description</h3>
             <textarea
+              required
               className="bg-black rounded border border-1 border-white "
               name=""
               id=""
