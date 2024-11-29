@@ -94,4 +94,4 @@ Copy code
 4. **Technologies Used**:
    - Lists ReactJS, localStorage, and SweetAlert2, which are used in the project.
 
-This `README.md` file provides a clean and clear overview of your Employee Management Sy
+This `README.md` file provides a clean and clear overview Employee Management System.

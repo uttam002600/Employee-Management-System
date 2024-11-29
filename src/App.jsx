@@ -15,7 +15,7 @@ const App = () => {
   useEffect(() => {
     //Run below two lines before runing whole application to store data in local storage
     // localStorage.clear();
-    // setLocalStorage();
+    setLocalStorage();
 
     // Load the logged-in user's data from localStorage on initial load
     const loggedInUser = localStorage.getItem("loggedInUser");
