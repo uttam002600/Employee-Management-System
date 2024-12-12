@@ -14,16 +14,19 @@ const Login = ({ handleLogin }) => {
   };
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      <div className="border-2 p-20 rounded-xl border-emerald-600">
+    <div className="flex h-screen w-screen items-center justify-center bg-[var(--text-black-100)]">
+      <div className="w-full max-w-md p-8 sm:p-12 bg-white rounded-2xl shadow-lg">
+        <h1 className="text-2xl sm:text-3xl font-semibold text-center text-emerald-700 mb-6">
+          Log In
+        </h1>
         <form
           onSubmit={(e) => {
             submitHandler(e);
           }}
-          className="flex flex-col items-center justify-center"
+          className="flex flex-col"
         >
           <input
-            className="text-white bg-transparent border-2 py-3 px-5 border-emerald-600 text-xl rounded-full placeholder:text-grey-400"
+            className="w-full mb-4 p-3 border-2 border-emerald-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent placeholder-gray-400 text-white"
             type="email"
             required
             placeholder="Enter your Email"
@@ -33,7 +36,7 @@ const Login = ({ handleLogin }) => {
             }}
           />
           <input
-            className="text-white bg-transparent border-2 py-3 px-5 border-emerald-600 text-xl rounded-full mt-3 placeholder:text-grey-400"
+            className="w-full mb-6 p-3 border-2 border-emerald-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent placeholder-gray-400 text-white"
             type="password"
             required
             placeholder="Enter your password"
@@ -43,7 +46,7 @@ const Login = ({ handleLogin }) => {
             }}
           />
           <button
-            className="text-white mt-5 border-none py-3 px-5 bg-emerald-600 text-xl rounded-full placeholder:text-white"
+            className="w-full py-3 bg-emerald-500 text-white font-semibold rounded-lg hover:bg-emerald-600 transition duration-300 shadow-lg"
             type="submit"
           >
             Log In
